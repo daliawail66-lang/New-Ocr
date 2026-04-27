@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New-Ocr — Lecteur de texte (OCR)</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --text: #e7edf4;
+      --muted: #8b9cb3;
+      --accent: #3d8fd1;
+      --accent2: #5ab87a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem 1.35rem;
+      margin: 1.25rem 0;
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    p { margin: 0.75rem 0; color: var(--muted); }
+    p strong { color: var(--text); }
+    a.btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.65rem 1.1rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    a.btn:hover { filter: brightness(1.08); }
+    a.link { color: var(--accent2); }
+    ul { margin: 0.5rem 0 0; padding-left: 1.2rem; color: var(--muted); }
+    li { margin: 0.35rem 0; }
+    .en { font-size: 0.9rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.08); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>New-Ocr — Smart Text Reader</h1>
+    <span class="tag">Prototype OCR · Master 2 · Télécommunications</span>
+
+    <div class="card">
+      <p>
+        <strong>Projet :</strong> lecteur de texte pour personnes malvoyantes — détection et reconnaissance
+        (OpenCV + Tesseract), interface graphique <strong>customtkinter</strong>.
+      </p>
+      <p>
+        Cette page résume le dépôt. Le <strong>code source</strong>, le <strong>README</strong> et les instructions d’installation
+        sont sur GitHub.
+      </p>
+      <a class="btn" href="https://github.com/daliawail66-lang/New-Ocr">Voir le dépôt GitHub</a>
+    </div>
+
+    <p>
+      <strong>Pour votre enseignant :</strong> ouvrir le lien ci-dessus pour lire la documentation et parcourir les fichiers
+      (<code>OCR/</code>, <code>src/</code>, etc.). L’application se lance en local avec Python après installation de Tesseract.
+    </p>
+
+    <ul>
+      <li>Dépôt : <a class="link" href="https://github.com/daliawail66-lang/New-Ocr">github.com/daliawail66-lang/New-Ocr</a></li>
+      <li>Branche : <code>main</code></li>
+    </ul>
+
+    <div class="en">
+      <p><strong>English (short):</strong> OCR prototype for a Master 2 thesis — text reader for visually impaired users.
+        Source and setup instructions are in the GitHub repository above.</p>
+    </div>
+  </div>
+</body>
+</html>
